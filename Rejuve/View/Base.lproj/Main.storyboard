@@ -40,25 +40,12 @@
                                         </constraints>
                                         <state key="normal" image="info"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLC-DE-kcy">
-                                        <rect key="frame" x="300" y="8" width="35" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="0R3-1Q-6cT"/>
-                                            <constraint firstAttribute="width" constant="35" id="HMl-Oj-7tf"/>
-                                        </constraints>
-                                        <state key="normal" image="musicNote"/>
-                                        <connections>
-                                            <segue destination="Wwd-mL-dTw" kind="presentation" identifier="showSounds" id="Zxz-4R-xMf"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="NLC-DE-kcy" secondAttribute="trailing" constant="8" id="DOZ-di-4MV"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="jF0-vv-KaM" secondAttribute="trailing" id="Gq0-5b-cQ3"/>
                                     <constraint firstItem="7kD-AQ-AHu" firstAttribute="top" secondItem="sVh-ir-vuK" secondAttribute="top" constant="8" id="Jpl-73-VkM"/>
                                     <constraint firstItem="7kD-AQ-AHu" firstAttribute="leading" secondItem="sVh-ir-vuK" secondAttribute="leading" constant="8" id="Z8N-CE-k3d"/>
                                     <constraint firstItem="jF0-vv-KaM" firstAttribute="leading" secondItem="sVh-ir-vuK" secondAttribute="leadingMargin" id="cZi-Y0-z8z"/>
-                                    <constraint firstItem="NLC-DE-kcy" firstAttribute="top" secondItem="sVh-ir-vuK" secondAttribute="top" constant="8" id="nIl-Ll-MXl"/>
                                     <constraint firstItem="jF0-vv-KaM" firstAttribute="centerY" secondItem="sVh-ir-vuK" secondAttribute="centerY" id="xD2-Me-KT4"/>
                                 </constraints>
                                 <variation key="default">
@@ -111,10 +98,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bjd-of-tGd">
-                                <rect key="frame" x="0.0" y="463" width="375" height="184"/>
+                                <rect key="frame" x="0.0" y="463" width="375" height="204"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50J-mg-cvo" customClass="RoundedButton" customModule="Rejuve" customModuleProvider="target">
-                                        <rect key="frame" x="87.5" y="58" width="200" height="68"/>
+                                        <rect key="frame" x="87.5" y="68" width="200" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="EvS-H2-dsQ"/>
                                             <constraint firstAttribute="width" constant="200" id="lD1-fU-swL"/>
@@ -132,8 +119,21 @@
                                             <segue destination="qDB-QK-f86" kind="presentation" identifier="showNapTimer" id="D7E-ww-W9v"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLC-DE-kcy">
+                                        <rect key="frame" x="16" y="153" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="0R3-1Q-6cT"/>
+                                            <constraint firstAttribute="width" constant="35" id="HMl-Oj-7tf"/>
+                                        </constraints>
+                                        <state key="normal" image="musicNote"/>
+                                        <connections>
+                                            <segue destination="Wwd-mL-dTw" kind="presentation" identifier="showSounds" id="Zxz-4R-xMf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="NLC-DE-kcy" firstAttribute="leading" secondItem="Bjd-of-tGd" secondAttribute="leadingMargin" constant="8" id="BF8-mN-Hk9"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="NLC-DE-kcy" secondAttribute="bottom" constant="8" id="CfK-NE-UnN"/>
                                     <constraint firstItem="50J-mg-cvo" firstAttribute="centerY" secondItem="Bjd-of-tGd" secondAttribute="centerY" id="LTG-NH-xhl"/>
                                     <constraint firstItem="50J-mg-cvo" firstAttribute="centerX" secondItem="Bjd-of-tGd" secondAttribute="centerX" id="UUN-wb-as1"/>
                                 </constraints>
@@ -150,7 +150,7 @@
                             <constraint firstItem="XG4-Tg-nxG" firstAttribute="trailing" secondItem="Bjd-of-tGd" secondAttribute="trailing" id="TLa-Sr-4aq"/>
                             <constraint firstItem="Bjd-of-tGd" firstAttribute="top" secondItem="x9t-R5-m9H" secondAttribute="bottom" id="XQI-C6-JZW"/>
                             <constraint firstItem="Bjd-of-tGd" firstAttribute="leading" secondItem="XG4-Tg-nxG" secondAttribute="leading" id="ZkV-v6-xf5"/>
-                            <constraint firstItem="XG4-Tg-nxG" firstAttribute="bottom" secondItem="Bjd-of-tGd" secondAttribute="bottom" constant="20" id="aqR-av-YdE"/>
+                            <constraint firstItem="XG4-Tg-nxG" firstAttribute="bottom" secondItem="Bjd-of-tGd" secondAttribute="bottom" id="aqR-av-YdE"/>
                             <constraint firstItem="x9t-R5-m9H" firstAttribute="centerX" secondItem="XG4-Tg-nxG" secondAttribute="centerX" id="chs-GW-grR"/>
                             <constraint firstItem="etP-He-Ynu" firstAttribute="top" secondItem="XG4-Tg-nxG" secondAttribute="top" constant="-30" id="iNP-Xs-U1H"/>
                             <constraint firstItem="etP-He-Ynu" firstAttribute="leading" secondItem="XG4-Tg-nxG" secondAttribute="leading" id="tII-hl-6PO"/>
