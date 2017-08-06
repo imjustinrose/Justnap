@@ -90,7 +90,7 @@ class HomeViewController: UIViewController, SoundViewControllerDelegate {
 
 
 // MARK: - CircularSliderDelegate
-extension ViewController: CircularSliderDelegate {
+extension HomeViewController: CircularSliderDelegate {
     func circularSlider(_ circularSlider: CircularSlider, valueForValue value: Float) -> Float {
         time.minutes = Int(floorf(value))
         UserDefaults.standard.set(time.minutes, forKey: "minutes")

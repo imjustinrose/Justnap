@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Create a SoundStore
         let soundStore = SoundStore(sounds)
         
-        let soundController = window!.rootViewController as! ViewController
+        let soundController = window!.rootViewController as! HomeViewController
         soundController.soundStore = soundStore
         
         guard let soundName = UserDefaults.standard.object(forKey: "soundName") as? String else {
