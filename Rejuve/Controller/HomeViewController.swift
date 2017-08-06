@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Rejuve
 //
 //  Created by Justin Rose on 7/4/17.
@@ -9,7 +9,7 @@
 import UIKit
 import CircularSlider
 
-class ViewController: UIViewController, SoundViewControllerDelegate {
+class HomeViewController: UIViewController, SoundViewControllerDelegate {
     
     var soundStore: SoundStore!
     @IBOutlet weak var circularSlider: CircularSlider!
@@ -73,39 +73,17 @@ class ViewController: UIViewController, SoundViewControllerDelegate {
     func setNapDescriptionLabel() {
         switch time.minutes {
         case 0:
-            self.napDescriptionLabel.fadeOut()
             self.napDescriptionLabel.text = ""
-            self.napDescriptionLabel.fadeIn()
         case 10...29:
-            if time.minutes == 10 || time.minutes == 29 {
-                self.napDescriptionLabel.fadeOut()
-                self.napDescriptionLabel.text = "ENERGETIC BOOST"
-                self.napDescriptionLabel.fadeIn()
-            }
+            self.napDescriptionLabel.text = "ENERGETIC BOOST"
         case 30...59:
-            if time.minutes == 30 || time.minutes == 59 {
-                self.napDescriptionLabel.fadeOut()
-                self.napDescriptionLabel.text = "POWER NAP"
-                self.napDescriptionLabel.fadeIn()
-            }
+            self.napDescriptionLabel.text = "POWER NAP"
         case 60...89:
-            if time.minutes == 60 || time.minutes == 89 {
-                self.napDescriptionLabel.fadeOut()
-                napDescriptionLabel.text = "REFRESHED & REJUVINATED"
-                self.napDescriptionLabel.fadeIn()
-            }
+            napDescriptionLabel.text = "REFRESHED & REJUVINATED"
         case 90:
-            if time.minutes == 90 {
-                self.napDescriptionLabel.fadeOut()
-                napDescriptionLabel.text = "THE PERFECT NAP"
-                self.napDescriptionLabel.fadeIn()
-            }
+            napDescriptionLabel.text = "THE PERFECT NAP"
         default:
-            if time.minutes == 1 || time.minutes == 9 {
-                self.napDescriptionLabel.fadeOut()
-                napDescriptionLabel.text = "CAT NAP"
-                self.napDescriptionLabel.fadeIn()
-            }
+            napDescriptionLabel.text = "CAT NAP"
         }
     }
 }
@@ -114,30 +92,12 @@ class ViewController: UIViewController, SoundViewControllerDelegate {
 // MARK: - CircularSliderDelegate
 extension ViewController: CircularSliderDelegate {
     func circularSlider(_ circularSlider: CircularSlider, valueForValue value: Float) -> Float {
-        print("called")
         time.minutes = Int(floorf(value))
         UserDefaults.standard.set(time.minutes, forKey: "minutes")
-        print("time.min: ", time.minutes)
         
         setNapDescriptionLabel()
         
         return floorf(value)
     }
-}
-
-extension UIView {
-    
-    
-    func fadeIn(duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in }) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
-            self.alpha = 1.0
-        }, completion: completion)  }
-    
-    func fadeOut(duration: TimeInterval = 1.0, delay: TimeInterval = 3.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
-            self.alpha = 0.0
-        }, completion: completion)
-    }
-    
 }
 

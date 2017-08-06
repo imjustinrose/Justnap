@@ -23,7 +23,7 @@
 		76DAF2861F360C2A00F9D3D6 /* bensound-happyrock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF27E1F360C2A00F9D3D6 /* bensound-happyrock.mp3 */; };
 		76DAF2881F360CC900F9D3D6 /* SoundStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DAF2871F360CC900F9D3D6 /* SoundStore.swift */; };
 		76E488041F0C339D008A58EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E488031F0C339D008A58EF /* AppDelegate.swift */; };
-		76E488061F0C339D008A58EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E488051F0C339D008A58EF /* ViewController.swift */; };
+		76E488061F0C339D008A58EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E488051F0C339D008A58EF /* HomeViewController.swift */; };
 		76E488091F0C339D008A58EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E488071F0C339D008A58EF /* Main.storyboard */; };
 		76E4880B1F0C339D008A58EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E4880A1F0C339D008A58EF /* Assets.xcassets */; };
 		76E4880E1F0C339D008A58EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */; };
@@ -61,7 +61,7 @@
 		76DAF2871F360CC900F9D3D6 /* SoundStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundStore.swift; sourceTree = "<group>"; };
 		76E488001F0C339D008A58EF /* Rejuve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rejuve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E488031F0C339D008A58EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76E488051F0C339D008A58EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76E488051F0C339D008A58EF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		76E488081F0C339D008A58EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76E4880A1F0C339D008A58EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E4880D1F0C339D008A58EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		76DAF28B1F36324900F9D3D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				76E488051F0C339D008A58EF /* ViewController.swift */,
+				76E488051F0C339D008A58EF /* HomeViewController.swift */,
 				764FBB2B1F2AB586003369D1 /* SoundViewController.swift */,
 				761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */,
 			);
@@ -317,7 +317,7 @@
 				764FBB2E1F2AB757003369D1 /* SoundTableViewCell.swift in Sources */,
 				76DAF2881F360CC900F9D3D6 /* SoundStore.swift in Sources */,
 				761C0AFE1F353C0A0065606F /* Sound.swift in Sources */,
-				76E488061F0C339D008A58EF /* ViewController.swift in Sources */,
+				76E488061F0C339D008A58EF /* HomeViewController.swift in Sources */,
 				764FBB2C1F2AB586003369D1 /* SoundViewController.swift in Sources */,
 				76B7D2441F0C8C2D000F4505 /* RoundedButton.swift in Sources */,
 				76E488041F0C339D008A58EF /* AppDelegate.swift in Sources */,
