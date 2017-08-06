@@ -9,4 +9,4 @@
 
 Set a time             |  Select a sound          |  Sleep easy
 :-------------------------:|:-------------------------:|:-------------------------:
-![](img/home_2.png)        |  ![](img/sounds.png)      |  ![](img/timer.png)
+![](img/home_2.png)        |  ![](img/sounds_2.png)      |  ![](img/timer.png)
