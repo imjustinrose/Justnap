@@ -16,6 +16,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        if let font = UIFont(name: "Helvetica", size: 17.0) {
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font.rawValue: font,
+                                                                NSAttributedStringKey.foregroundColor.rawValue: UIColor.white]
+        }
+        
+        // Sounds
+        let sounds = [
+            Sound("Going Higher", fileURL: "bensound-goinghigher", type: "mp3"),
+            Sound("Energy", fileURL: "bensound-energy", type: "mp3"),
+            Sound("Memories", fileURL: "bensound-memories", type: "mp3"),
+            Sound("Ukulele", fileURL: "bensound-ukulele", type: "mp3"),
+            Sound("Better Days", fileURL: "bensound-betterdays", type: "mp3"),
+            Sound("A New Beginning", fileURL: "bensound-anewbeginning", type: "mp3"),
+            Sound("Happy Rock", fileURL: "bensound-happyrock", type: "mp3"),
+            Sound("Jazzy Frenchy", fileURL: "bensound-jazzyfrenchy", type: "mp3")
+        ]
+        
+        // Create a SoundStore
+        let soundStore = SoundStore(sounds)
+        
+        let soundController = window!.rootViewController as! ViewController
+        soundController.soundStore = soundStore
+        
         return true
     }
 
