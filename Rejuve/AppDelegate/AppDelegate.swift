@@ -25,14 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Sounds
         let sounds = [
-            Sound("Going Higher", fileURL: "bensound-goinghigher", type: "mp3"),
-            Sound("Energy", fileURL: "bensound-energy", type: "mp3"),
-            Sound("Memories", fileURL: "bensound-memories", type: "mp3"),
-            Sound("Ukulele", fileURL: "bensound-ukulele", type: "mp3"),
-            Sound("Better Days", fileURL: "bensound-betterdays", type: "mp3"),
-            Sound("A New Beginning", fileURL: "bensound-anewbeginning", type: "mp3"),
-            Sound("Happy Rock", fileURL: "bensound-happyrock", type: "mp3"),
-            Sound("Jazzy Frenchy", fileURL: "bensound-jazzyfrenchy", type: "mp3")
+            Sound(name: "Going Higher", fileURL: "bensound-goinghigher", type: "mp3"),
+            Sound(name: "Energy", fileURL: "bensound-energy", type: "mp3"),
+            Sound(name: "Memories", fileURL: "bensound-memories", type: "mp3"),
+            Sound(name: "Ukulele", fileURL: "bensound-ukulele", type: "mp3"),
+            Sound(name: "Better Days", fileURL: "bensound-betterdays", type: "mp3"),
+            Sound(name: "A New Beginning", fileURL: "bensound-anewbeginning", type: "mp3"),
+            Sound(name: "Happy Rock", fileURL: "bensound-happyrock", type: "mp3"),
+            Sound(name: "Jazzy Frenchy", fileURL: "bensound-jazzyfrenchy", type: "mp3")
         ]
         
         // Create a SoundStore
@@ -45,13 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let fileURL = "bensound-\("Going Higher".replacingOccurrences(of: " ", with: "").lowercased())"
             UserDefaults.standard.set("Going Higher", forKey: "soundName")
-            soundController.soundStore.sound = Sound.init("Going Higher", fileURL: fileURL, type: "mp3")
+            soundController.soundStore.sound = Sound.init(name: "Going Higher", fileURL: fileURL, type: "mp3")
             
             return true
         }
         
         let fileURL = "bensound-\(soundName.replacingOccurrences(of: " ", with: "").lowercased())"
-        soundController.soundStore.sound = Sound.init(soundName, fileURL: fileURL, type: "mp3")
+        soundController.soundStore.sound = Sound.init(name: soundName, fileURL: fileURL, type: "mp3")
         
         return true
     }

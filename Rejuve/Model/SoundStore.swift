@@ -15,7 +15,7 @@ public class SoundStore {
     private var player: AVAudioPlayer?
     
     @discardableResult func createSound(_ name: String, fileURL: String, type: String) -> Sound {
-        let sound = Sound(name, fileURL: fileURL, type: type)
+        let sound = Sound(name: name, fileURL: fileURL, type: type)
         sounds.append(sound)
         
         return sound

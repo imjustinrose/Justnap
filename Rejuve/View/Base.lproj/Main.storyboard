@@ -168,6 +168,7 @@
                     <connections>
                         <outlet property="circularSlider" destination="x9t-R5-m9H" id="cqQ-4V-g8Q"/>
                         <outlet property="napDescriptionLabel" destination="jF0-vv-KaM" id="0Rs-kQ-Xyv"/>
+                        <outlet property="sleepButton" destination="50J-mg-cvo" id="mBL-yg-r5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

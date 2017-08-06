@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var circularSlider: CircularSlider!
     @IBOutlet weak var napDescriptionLabel: UILabel!
+    @IBOutlet weak var sleepButton: RoundedButton!
     
     // MARK: -
     var time = (minutes: 0, seconds: 0)
@@ -51,12 +52,16 @@ class HomeViewController: UIViewController {
         case 30...59:
             self.napDescriptionLabel.text = "POWER NAP"
         case 60...89:
-            napDescriptionLabel.text = "REFRESHED & REJUVINATED"
+            napDescriptionLabel.text = "REFRESHED & REJUVENATED"
         case 90:
             napDescriptionLabel.text = "THE PERFECT NAP"
         default:
             napDescriptionLabel.text = "CAT NAP"
         }
+    }
+    
+    func setButtonState() {
+        sleepButton.isEnabled = time.minutes == 0 ? false : true
     }
     
     // MARK: - Segue
@@ -90,6 +95,7 @@ extension HomeViewController: CircularSliderDelegate {
         time.minutes = Int(floorf(value))
         UserDefaults.standard.set(time.minutes, forKey: "minutes")
         setNapDescriptionLabel()
+        setButtonState()
         
         return floorf(value)
     }
