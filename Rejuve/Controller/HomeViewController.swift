@@ -9,59 +9,37 @@
 import UIKit
 import CircularSlider
 
-class HomeViewController: UIViewController, SoundViewControllerDelegate {
+class HomeViewController: UIViewController {
     
-    var soundStore: SoundStore!
+    // MARK: - IBOutlets
     @IBOutlet weak var circularSlider: CircularSlider!
     @IBOutlet weak var napDescriptionLabel: UILabel!
     
+    // MARK: -
     var time = (minutes: 0, seconds: 0)
+    var soundStore: SoundStore!
     
-    // MARK: - view lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupCircularSlider()
         setupNavigationBar()
         setNapDescriptionLabel()
-        
-        
-        
-        
-        time.minutes = UserDefaults.standard.integer(forKey: "minutes")
-        circularSlider.value = Float(time.minutes)
-        
-        
     }
     
+    // MARK: - UI Setup
     func setupNavigationBar() {
         guard let nav = navigationController else { return }
+        
         nav.navigationBar.shadowImage = UIImage()
         extendedLayoutIncludesOpaqueBars = true
     }
     
     fileprivate func setupCircularSlider() {
         circularSlider.delegate = self
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showNapTimer" {
-            let vc = segue.destination as! NapTimerViewController
-            vc.time.minutes = time.minutes
-            vc.soundStore = soundStore
-        }
-        
-        if segue.identifier == "showSounds" {
-            let navController = segue.destination as! UINavigationController
-            let vc = navController.topViewController as! SoundViewController
-            vc.soundStore = soundStore
-            vc.soundStore = soundStore
-            vc.delegate = self
-        }
-    }
-    
-    func soundSelected(_ sender: SoundViewController, selectedSound: Sound) {
-        soundStore.sound = selectedSound
+        time.minutes = UserDefaults.standard.integer(forKey: "minutes") == 0 ? 10 : UserDefaults.standard.integer(forKey: "minutes")
+        circularSlider.value = Float(time.minutes)
     }
     
     func setNapDescriptionLabel() {
@@ -80,8 +58,31 @@ class HomeViewController: UIViewController, SoundViewControllerDelegate {
             napDescriptionLabel.text = "CAT NAP"
         }
     }
+    
+    // MARK: - Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showNapTimer"?:
+            let vc = segue.destination as! NapTimerViewController
+            vc.time.minutes = time.minutes
+            vc.soundStore = soundStore
+        case "showSounds"?:
+            let navController = segue.destination as! UINavigationController
+            let vc = navController.topViewController as! SoundViewController
+            vc.soundStore = soundStore
+            vc.delegate = self
+        default:
+            preconditionFailure("Unexpected segue identifier: \(segue.identifier ?? "")")
+        }
+    }
 }
 
+// MARK: - SoundViewControllerDelegate
+extension HomeViewController: SoundViewControllerDelegate {
+    func soundSelected(_ sender: SoundViewController, selectedSound: Sound) {
+        soundStore.sound = selectedSound
+    }
+}
 
 // MARK: - CircularSliderDelegate
 extension HomeViewController: CircularSliderDelegate {

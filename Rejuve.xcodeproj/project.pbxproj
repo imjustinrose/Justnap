@@ -11,7 +11,6 @@
 		761C0AFE1F353C0A0065606F /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C0AFD1F353C0A0065606F /* Sound.swift */; };
 		761C0B001F3544FE0065606F /* NapTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */; };
 		764FBB2C1F2AB586003369D1 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FBB2B1F2AB586003369D1 /* SoundViewController.swift */; };
-		764FBB2E1F2AB757003369D1 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FBB2D1F2AB757003369D1 /* SoundTableViewCell.swift */; };
 		76B7D2441F0C8C2D000F4505 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */; };
 		76DAF27F1F360C2A00F9D3D6 /* bensound-goinghigher.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */; };
 		76DAF2801F360C2A00F9D3D6 /* bensound-ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */; };
@@ -26,7 +25,6 @@
 		76E488061F0C339D008A58EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E488051F0C339D008A58EF /* HomeViewController.swift */; };
 		76E488091F0C339D008A58EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E488071F0C339D008A58EF /* Main.storyboard */; };
 		76E4880B1F0C339D008A58EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E4880A1F0C339D008A58EF /* Assets.xcassets */; };
-		76E4880E1F0C339D008A58EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,7 +46,6 @@
 		761C0AFD1F353C0A0065606F /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapTimerViewController.swift; sourceTree = "<group>"; };
 		764FBB2B1F2AB586003369D1 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
-		764FBB2D1F2AB757003369D1 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
 		76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-goinghigher.mp3"; path = "../../../Rejuve_Assets/audio/bensound-goinghigher.mp3"; sourceTree = "<group>"; };
 		76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-ukulele.mp3"; path = "../../../Rejuve_Assets/audio/bensound-ukulele.mp3"; sourceTree = "<group>"; };
@@ -64,7 +61,6 @@
 		76E488051F0C339D008A58EF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		76E488081F0C339D008A58EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76E4880A1F0C339D008A58EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76E4880D1F0C339D008A58EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76E4880F1F0C339D008A58EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CE55722C0B76A9637FAD16E /* Pods_Rejuve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rejuve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,7 +103,6 @@
 		76DAF2891F36323B00F9D3D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				764FBB2D1F2AB757003369D1 /* SoundTableViewCell.swift */,
 				76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */,
 				761C0AFD1F353C0A0065606F /* Sound.swift */,
 				76DAF2871F360CC900F9D3D6 /* SoundStore.swift */,
@@ -119,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				76E488071F0C339D008A58EF /* Main.storyboard */,
-				76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,7 +241,6 @@
 			files = (
 				76DAF27F1F360C2A00F9D3D6 /* bensound-goinghigher.mp3 in Resources */,
 				76DAF2821F360C2A00F9D3D6 /* bensound-betterdays.mp3 in Resources */,
-				76E4880E1F0C339D008A58EF /* LaunchScreen.storyboard in Resources */,
 				76DAF2801F360C2A00F9D3D6 /* bensound-ukulele.mp3 in Resources */,
 				76E4880B1F0C339D008A58EF /* Assets.xcassets in Resources */,
 				76DAF2861F360C2A00F9D3D6 /* bensound-happyrock.mp3 in Resources */,
@@ -314,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764FBB2E1F2AB757003369D1 /* SoundTableViewCell.swift in Sources */,
 				76DAF2881F360CC900F9D3D6 /* SoundStore.swift in Sources */,
 				761C0AFE1F353C0A0065606F /* Sound.swift in Sources */,
 				76E488061F0C339D008A58EF /* HomeViewController.swift in Sources */,
@@ -334,14 +326,6 @@
 				76E488081F0C339D008A58EF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76E4880D1F0C339D008A58EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -10,13 +10,11 @@ public class Sound {
     private(set) var name: String
     private(set) var fileURL: String
     private(set) var type: String
-    var checked: Bool
     
     public init(_ name: String, fileURL: String, type: String) {
         self.name = name
         self.fileURL = fileURL
         self.type = type
-        checked = false
     }
 }
 

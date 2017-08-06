@@ -16,7 +16,6 @@ public class SoundStore {
     
     @discardableResult func createSound(_ name: String, fileURL: String, type: String) -> Sound {
         let sound = Sound(name, fileURL: fileURL, type: type)
-        
         sounds.append(sound)
         
         return sound
