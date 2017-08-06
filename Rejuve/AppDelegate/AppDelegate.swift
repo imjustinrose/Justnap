@@ -41,6 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let soundController = window!.rootViewController as! ViewController
         soundController.soundStore = soundStore
         
+        guard let soundName = UserDefaults.standard.object(forKey: "soundName") as? String else {
+            
+            let fileURL = "bensound-\("Going Higher".replacingOccurrences(of: " ", with: "").lowercased())"
+            UserDefaults.standard.set("Going Higher", forKey: "soundName")
+            soundController.soundStore.sound = Sound.init("Going Higher", fileURL: fileURL, type: "mp3")
+            print("here")
+            return true
+        }
+        
+        let fileURL = "bensound-\(soundName.replacingOccurrences(of: " ", with: "").lowercased())"
+        print("the fileURL... ", fileURL)
+        soundController.soundStore.sound = Sound.init(soundName, fileURL: fileURL, type: "mp3")
+        
         return true
     }
 

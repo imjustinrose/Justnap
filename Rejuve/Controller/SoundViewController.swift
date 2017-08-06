@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol SoundViewControllerDelegate {
+    func soundSelected(_ sender: SoundViewController, selectedSound: Sound)
+}
+
 class SoundViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var soundStore: SoundStore!
+    var delegate: SoundViewControllerDelegate?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,6 +27,19 @@ class SoundViewController: UIViewController, UITableViewDataSource, UITableViewD
         navigationItem.title = "Sound"
         
         tableView.tableFooterView = UIView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        for row in 0 ..< soundStore.sounds.count {
+            if soundStore.sounds[row].fileURL == soundStore.sound.fileURL {
+                if let cell = tableView.cellForRow(at: IndexPath(row: row, section: 0)) {
+                    cell.accessoryType = .checkmark
+                    tableView.selectRow(at: IndexPath(row: row, section: 0), animated: false, scrollPosition: .none)
+                }
+            }
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -81,6 +99,7 @@ class SoundViewController: UIViewController, UITableViewDataSource, UITableViewD
         switch indexPath.section {
         case 0:
             cell.textLabel?.text = soundStore.sounds[indexPath.row].name
+            
             break
         case 1:
             cell.textLabel?.text = "Select track"
@@ -95,9 +114,9 @@ class SoundViewController: UIViewController, UITableViewDataSource, UITableViewD
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
         
         // UserDefaults
-        let sound = soundStore.sounds[indexPath.row]
-        sound.checked = true
-        sound.play()
+        soundStore.sound = soundStore.sounds[indexPath.row]
+        UserDefaults.standard.set(soundStore.sound.name, forKey: "soundName")
+        soundStore.play()
         
         cell.accessoryType = .checkmark
         
@@ -106,10 +125,7 @@ class SoundViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) else { return }
         
-        // UserDefaults
-        let sound = soundStore.sounds[indexPath.row]
-        sound.checked = false
-        sound.stop()
+        soundStore.stop()
         
         cell.accessoryType = .none
     }
@@ -117,7 +133,8 @@ class SoundViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        
+        delegate?.soundSelected(self, selectedSound: soundStore.sound)
+        soundStore.stop()
     }
     
     @IBAction func dismissSoundController(_ sender: UIBarButtonItem) {

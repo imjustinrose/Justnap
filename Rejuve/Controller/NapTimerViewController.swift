@@ -31,6 +31,8 @@ class NapTimerViewController: UIViewController {
     
     @objc func count() {
         
+        
+        
         print("\(time.minutes):\(time.seconds)")
         
         switch time.seconds {
@@ -38,6 +40,7 @@ class NapTimerViewController: UIViewController {
             if time.minutes == 0 && time.seconds == 0 {
                 timer.invalidate()
                 timerLabel.text = "0:00"
+                soundStore.play()
                 return
             }
             
@@ -68,5 +71,6 @@ class NapTimerViewController: UIViewController {
         super.viewDidDisappear(animated)
         
         timer.invalidate()
+        soundStore.stop()
     }
 }

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22868CE0457C4D3E16444CE0 /* Pods_Rejuve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE55722C0B76A9637FAD16E /* Pods_Rejuve.framework */; };
+		761C0AFE1F353C0A0065606F /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C0AFD1F353C0A0065606F /* Sound.swift */; };
+		761C0B001F3544FE0065606F /* NapTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */; };
+		764FBB2C1F2AB586003369D1 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FBB2B1F2AB586003369D1 /* SoundViewController.swift */; };
+		764FBB2E1F2AB757003369D1 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764FBB2D1F2AB757003369D1 /* SoundTableViewCell.swift */; };
+		76B7D2441F0C8C2D000F4505 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */; };
+		76DAF27F1F360C2A00F9D3D6 /* bensound-goinghigher.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */; };
+		76DAF2801F360C2A00F9D3D6 /* bensound-ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */; };
+		76DAF2811F360C2A00F9D3D6 /* bensound-energy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF2791F360C2A00F9D3D6 /* bensound-energy.mp3 */; };
+		76DAF2821F360C2A00F9D3D6 /* bensound-betterdays.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF27A1F360C2A00F9D3D6 /* bensound-betterdays.mp3 */; };
+		76DAF2831F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF27B1F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 */; };
+		76DAF2841F360C2A00F9D3D6 /* bensound-memories.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF27C1F360C2A00F9D3D6 /* bensound-memories.mp3 */; };
+		76DAF2851F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF27D1F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 */; };
+		76DAF2861F360C2A00F9D3D6 /* bensound-happyrock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DAF27E1F360C2A00F9D3D6 /* bensound-happyrock.mp3 */; };
+		76DAF2881F360CC900F9D3D6 /* SoundStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DAF2871F360CC900F9D3D6 /* SoundStore.swift */; };
 		76E488041F0C339D008A58EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E488031F0C339D008A58EF /* AppDelegate.swift */; };
 		76E488061F0C339D008A58EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E488051F0C339D008A58EF /* ViewController.swift */; };
 		76E488091F0C339D008A58EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E488071F0C339D008A58EF /* Main.storyboard */; };
@@ -14,7 +29,36 @@
 		76E4880E1F0C339D008A58EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		76DBDDF11F0C34D6006643D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6D9FCBC205748EA7A2613B53 /* Pods-Rejuve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rejuve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rejuve/Pods-Rejuve.debug.xcconfig"; sourceTree = "<group>"; };
+		73647B9CD31AF4D9966FA343 /* Pods-Rejuve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rejuve.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rejuve/Pods-Rejuve.release.xcconfig"; sourceTree = "<group>"; };
+		761C0AFD1F353C0A0065606F /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapTimerViewController.swift; sourceTree = "<group>"; };
+		764FBB2B1F2AB586003369D1 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		764FBB2D1F2AB757003369D1 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-goinghigher.mp3"; path = "../../../Rejuve_Assets/audio/bensound-goinghigher.mp3"; sourceTree = "<group>"; };
+		76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-ukulele.mp3"; path = "../../../Rejuve_Assets/audio/bensound-ukulele.mp3"; sourceTree = "<group>"; };
+		76DAF2791F360C2A00F9D3D6 /* bensound-energy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-energy.mp3"; path = "../../../Rejuve_Assets/audio/bensound-energy.mp3"; sourceTree = "<group>"; };
+		76DAF27A1F360C2A00F9D3D6 /* bensound-betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-betterdays.mp3"; path = "../../../Rejuve_Assets/audio/bensound-betterdays.mp3"; sourceTree = "<group>"; };
+		76DAF27B1F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-anewbeginning.mp3"; path = "../../../Rejuve_Assets/audio/bensound-anewbeginning.mp3"; sourceTree = "<group>"; };
+		76DAF27C1F360C2A00F9D3D6 /* bensound-memories.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-memories.mp3"; path = "../../../Rejuve_Assets/audio/bensound-memories.mp3"; sourceTree = "<group>"; };
+		76DAF27D1F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-jazzyfrenchy.mp3"; path = "../../../Rejuve_Assets/audio/bensound-jazzyfrenchy.mp3"; sourceTree = "<group>"; };
+		76DAF27E1F360C2A00F9D3D6 /* bensound-happyrock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-happyrock.mp3"; path = "../../../Rejuve_Assets/audio/bensound-happyrock.mp3"; sourceTree = "<group>"; };
+		76DAF2871F360CC900F9D3D6 /* SoundStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundStore.swift; sourceTree = "<group>"; };
 		76E488001F0C339D008A58EF /* Rejuve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rejuve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E488031F0C339D008A58EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E488051F0C339D008A58EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +66,7 @@
 		76E4880A1F0C339D008A58EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E4880D1F0C339D008A58EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76E4880F1F0C339D008A58EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE55722C0B76A9637FAD16E /* Pods_Rejuve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rejuve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +74,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22868CE0457C4D3E16444CE0 /* Pods_Rejuve.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7395B34B123DFEFBD66C88F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE55722C0B76A9637FAD16E /* Pods_Rejuve.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76DAF2761F360C2000F9D3D6 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				76DAF27B1F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 */,
+				76DAF27A1F360C2A00F9D3D6 /* bensound-betterdays.mp3 */,
+				76DAF2791F360C2A00F9D3D6 /* bensound-energy.mp3 */,
+				76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */,
+				76DAF27E1F360C2A00F9D3D6 /* bensound-happyrock.mp3 */,
+				76DAF27D1F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 */,
+				76DAF27C1F360C2A00F9D3D6 /* bensound-memories.mp3 */,
+				76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		76DAF2891F36323B00F9D3D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				764FBB2D1F2AB757003369D1 /* SoundTableViewCell.swift */,
+				76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */,
+				761C0AFD1F353C0A0065606F /* Sound.swift */,
+				76DAF2871F360CC900F9D3D6 /* SoundStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76DAF28A1F36324100F9D3D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76E488071F0C339D008A58EF /* Main.storyboard */,
+				76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76DAF28B1F36324900F9D3D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76E488051F0C339D008A58EF /* ViewController.swift */,
+				764FBB2B1F2AB586003369D1 /* SoundViewController.swift */,
+				761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76DAF28C1F36325700F9D3D6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				76E488031F0C339D008A58EF /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		76E487F71F0C339D008A58EF = {
 			isa = PBXGroup;
 			children = (
 				76E488021F0C339D008A58EF /* Rejuve */,
 				76E488011F0C339D008A58EF /* Products */,
+				9F45F27CD1E87D1B646B106A /* Pods */,
+				7395B34B123DFEFBD66C88F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +163,24 @@
 		76E488021F0C339D008A58EF /* Rejuve */ = {
 			isa = PBXGroup;
 			children = (
-				76E488031F0C339D008A58EF /* AppDelegate.swift */,
-				76E488051F0C339D008A58EF /* ViewController.swift */,
-				76E488071F0C339D008A58EF /* Main.storyboard */,
+				76DAF28C1F36325700F9D3D6 /* AppDelegate */,
+				76DAF2891F36323B00F9D3D6 /* Model */,
+				76DAF28A1F36324100F9D3D6 /* View */,
+				76DAF28B1F36324900F9D3D6 /* Controller */,
+				76DAF2761F360C2000F9D3D6 /* Audio */,
 				76E4880A1F0C339D008A58EF /* Assets.xcassets */,
-				76E4880C1F0C339D008A58EF /* LaunchScreen.storyboard */,
 				76E4880F1F0C339D008A58EF /* Info.plist */,
 			);
 			path = Rejuve;
+			sourceTree = "<group>";
+		};
+		9F45F27CD1E87D1B646B106A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D9FCBC205748EA7A2613B53 /* Pods-Rejuve.debug.xcconfig */,
+				73647B9CD31AF4D9966FA343 /* Pods-Rejuve.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +190,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E488121F0C339D008A58EF /* Build configuration list for PBXNativeTarget "Rejuve" */;
 			buildPhases = (
+				A3A5BDBE6FBBBCCDC2D08ADA /* [CP] Check Pods Manifest.lock */,
 				76E487FC1F0C339D008A58EF /* Sources */,
 				76E487FD1F0C339D008A58EF /* Frameworks */,
 				76E487FE1F0C339D008A58EF /* Resources */,
+				2707E88DF1E8E34F6F086026 /* [CP] Embed Pods Frameworks */,
+				E06968731928445D56ECE25D /* [CP] Copy Pods Resources */,
+				76DBDDF11F0C34D6006643D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +245,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DAF27F1F360C2A00F9D3D6 /* bensound-goinghigher.mp3 in Resources */,
+				76DAF2821F360C2A00F9D3D6 /* bensound-betterdays.mp3 in Resources */,
 				76E4880E1F0C339D008A58EF /* LaunchScreen.storyboard in Resources */,
+				76DAF2801F360C2A00F9D3D6 /* bensound-ukulele.mp3 in Resources */,
 				76E4880B1F0C339D008A58EF /* Assets.xcassets in Resources */,
+				76DAF2861F360C2A00F9D3D6 /* bensound-happyrock.mp3 in Resources */,
+				76DAF2851F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 in Resources */,
+				76DAF2841F360C2A00F9D3D6 /* bensound-memories.mp3 in Resources */,
+				76DAF2811F360C2A00F9D3D6 /* bensound-energy.mp3 in Resources */,
 				76E488091F0C339D008A58EF /* Main.storyboard in Resources */,
+				76DAF2831F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2707E88DF1E8E34F6F086026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rejuve/Pods-Rejuve-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A5BDBE6FBBBCCDC2D08ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E06968731928445D56ECE25D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rejuve/Pods-Rejuve-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76E487FC1F0C339D008A58EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764FBB2E1F2AB757003369D1 /* SoundTableViewCell.swift in Sources */,
+				76DAF2881F360CC900F9D3D6 /* SoundStore.swift in Sources */,
+				761C0AFE1F353C0A0065606F /* Sound.swift in Sources */,
 				76E488061F0C339D008A58EF /* ViewController.swift in Sources */,
+				764FBB2C1F2AB586003369D1 /* SoundViewController.swift in Sources */,
+				76B7D2441F0C8C2D000F4505 /* RoundedButton.swift in Sources */,
 				76E488041F0C339D008A58EF /* AppDelegate.swift in Sources */,
+				761C0B001F3544FE0065606F /* NapTimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +452,7 @@
 		};
 		76E488131F0C339D008A58EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9FCBC205748EA7A2613B53 /* Pods-Rejuve.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CQ77MWP9JA;
@@ -281,6 +467,7 @@
 		};
 		76E488141F0C339D008A58EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73647B9CD31AF4D9966FA343 /* Pods-Rejuve.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CQ77MWP9JA;
@@ -312,6 +499,7 @@
 				76E488141F0C339D008A58EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
