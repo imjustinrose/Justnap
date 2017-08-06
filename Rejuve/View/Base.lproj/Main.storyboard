@@ -15,6 +15,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Rejuve" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +61,11 @@
                                     <constraint firstItem="NLC-DE-kcy" firstAttribute="top" secondItem="sVh-ir-vuK" secondAttribute="top" constant="8" id="nIl-Ll-MXl"/>
                                     <constraint firstItem="jF0-vv-KaM" firstAttribute="centerY" secondItem="sVh-ir-vuK" secondAttribute="centerY" id="xD2-Me-KT4"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="7kD-AQ-AHu"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9t-R5-m9H" customClass="CircularSlider" customModule="CircularSlider">
                                 <rect key="frame" x="58" y="204" width="259" height="259"/>
@@ -172,6 +178,7 @@
         <scene sceneID="3ma-4Z-gZ6">
             <objects>
                 <viewController id="qDB-QK-f86" customClass="NapTimerViewController" customModule="Rejuve" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="FeA-Bq-Y3A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,6 +237,7 @@
         <scene sceneID="CCv-TS-WYW">
             <objects>
                 <viewController id="uGA-C5-FNp" customClass="SoundViewController" customModule="Rejuve" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="3gD-co-LmL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

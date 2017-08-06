@@ -22,32 +22,26 @@ class HomeViewController: UIViewController, SoundViewControllerDelegate {
         super.viewDidLoad()
         
         setupCircularSlider()
-        
-        extendedLayoutIncludesOpaqueBars = true
         setupNavigationBar()
+        setNapDescriptionLabel()
+        
+        
+        
         
         time.minutes = UserDefaults.standard.integer(forKey: "minutes")
-        print("time.min: ", time.minutes)
-        setNapDescriptionLabel()
+        circularSlider.value = Float(time.minutes)
+        
+        
     }
     
     func setupNavigationBar() {
         guard let nav = navigationController else { return }
         nav.navigationBar.shadowImage = UIImage()
+        extendedLayoutIncludesOpaqueBars = true
     }
     
-    // MARK: - methods
     fileprivate func setupCircularSlider() {
         circularSlider.delegate = self
-    }
-    
-    // MARK: - IBActions
-    @IBAction func decrementAction(_ sender: UIButton) {
-        circularSlider.setValue(circularSlider.value - 50, animated: true)
-    }
-    
-    @IBAction func incrementAction(_ sender: UIButton) {
-        circularSlider.setValue(circularSlider.value + 50, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -94,7 +88,6 @@ extension HomeViewController: CircularSliderDelegate {
     func circularSlider(_ circularSlider: CircularSlider, valueForValue value: Float) -> Float {
         time.minutes = Int(floorf(value))
         UserDefaults.standard.set(time.minutes, forKey: "minutes")
-        
         setNapDescriptionLabel()
         
         return floorf(value)
