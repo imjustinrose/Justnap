@@ -7,9 +7,9 @@
 //
 
 struct Sound {
-    private(set) var name: String
-    private(set) var fileURL: String
-    private(set) var type: String
+    let name: String
+    let fileURL: String
+    let type: String
 }
 
 

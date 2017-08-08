@@ -14,17 +14,18 @@ public class SoundStore {
     var sound: Sound!
     private var player: AVAudioPlayer?
     
-    @discardableResult func createSound(_ name: String, fileURL: String, type: String) -> Sound {
-        let sound = Sound(name: name, fileURL: fileURL, type: type)
-        sounds.append(sound)
+    init() {
         
-        return sound
-    }
-    
-    init(_ sounds: [Sound]) {
-        for sound in sounds {
-            createSound(sound.name, fileURL: sound.fileURL, type: sound.type)
-        }
+        sounds = [
+            Sound(name: "Going Higher", fileURL: "bensound-goinghigher", type: "mp3"),
+            Sound(name: "Energy", fileURL: "bensound-energy", type: "mp3"),
+            Sound(name: "Memories", fileURL: "bensound-memories", type: "mp3"),
+            Sound(name: "Ukulele", fileURL: "bensound-ukulele", type: "mp3"),
+            Sound(name: "Better Days", fileURL: "bensound-betterdays", type: "mp3"),
+            Sound(name: "A New Beginning", fileURL: "bensound-anewbeginning", type: "mp3"),
+            Sound(name: "Happy Rock", fileURL: "bensound-happyrock", type: "mp3"),
+            Sound(name: "Jazzy Frenchy", fileURL: "bensound-jazzyfrenchy", type: "mp3")
+        ]
     }
     
     func play() {

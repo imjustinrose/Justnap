@@ -23,20 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                                 NSAttributedStringKey.foregroundColor.rawValue: UIColor.white]
         }
         
-        // Sounds
-        let sounds = [
-            Sound(name: "Going Higher", fileURL: "bensound-goinghigher", type: "mp3"),
-            Sound(name: "Energy", fileURL: "bensound-energy", type: "mp3"),
-            Sound(name: "Memories", fileURL: "bensound-memories", type: "mp3"),
-            Sound(name: "Ukulele", fileURL: "bensound-ukulele", type: "mp3"),
-            Sound(name: "Better Days", fileURL: "bensound-betterdays", type: "mp3"),
-            Sound(name: "A New Beginning", fileURL: "bensound-anewbeginning", type: "mp3"),
-            Sound(name: "Happy Rock", fileURL: "bensound-happyrock", type: "mp3"),
-            Sound(name: "Jazzy Frenchy", fileURL: "bensound-jazzyfrenchy", type: "mp3")
-        ]
-        
         // Create a SoundStore
-        let soundStore = SoundStore(sounds)
+        let soundStore = SoundStore()
         
         let soundController = window!.rootViewController as! HomeViewController
         soundController.soundStore = soundStore
