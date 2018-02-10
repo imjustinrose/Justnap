@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         if let font = UIFont(name: "Helvetica", size: 17.0) {
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font.rawValue: font,
-                                                                NSAttributedStringKey.foregroundColor.rawValue: UIColor.white]
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): font,
+                                                                NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.white]
         }
         
         // Create a SoundStore

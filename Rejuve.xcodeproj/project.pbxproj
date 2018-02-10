@@ -47,14 +47,14 @@
 		761C0AFF1F3544FE0065606F /* NapTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapTimerViewController.swift; sourceTree = "<group>"; };
 		764FBB2B1F2AB586003369D1 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		76B7D2431F0C8C2D000F4505 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-goinghigher.mp3"; path = "../../../Rejuve_Assets/audio/bensound-goinghigher.mp3"; sourceTree = "<group>"; };
-		76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-ukulele.mp3"; path = "../../../Rejuve_Assets/audio/bensound-ukulele.mp3"; sourceTree = "<group>"; };
-		76DAF2791F360C2A00F9D3D6 /* bensound-energy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-energy.mp3"; path = "../../../Rejuve_Assets/audio/bensound-energy.mp3"; sourceTree = "<group>"; };
-		76DAF27A1F360C2A00F9D3D6 /* bensound-betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-betterdays.mp3"; path = "../../../Rejuve_Assets/audio/bensound-betterdays.mp3"; sourceTree = "<group>"; };
-		76DAF27B1F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-anewbeginning.mp3"; path = "../../../Rejuve_Assets/audio/bensound-anewbeginning.mp3"; sourceTree = "<group>"; };
-		76DAF27C1F360C2A00F9D3D6 /* bensound-memories.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-memories.mp3"; path = "../../../Rejuve_Assets/audio/bensound-memories.mp3"; sourceTree = "<group>"; };
-		76DAF27D1F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-jazzyfrenchy.mp3"; path = "../../../Rejuve_Assets/audio/bensound-jazzyfrenchy.mp3"; sourceTree = "<group>"; };
-		76DAF27E1F360C2A00F9D3D6 /* bensound-happyrock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-happyrock.mp3"; path = "../../../Rejuve_Assets/audio/bensound-happyrock.mp3"; sourceTree = "<group>"; };
+		76DAF2771F360C2900F9D3D6 /* bensound-goinghigher.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-goinghigher.mp3"; sourceTree = "<group>"; };
+		76DAF2781F360C2900F9D3D6 /* bensound-ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-ukulele.mp3"; sourceTree = "<group>"; };
+		76DAF2791F360C2A00F9D3D6 /* bensound-energy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-energy.mp3"; sourceTree = "<group>"; };
+		76DAF27A1F360C2A00F9D3D6 /* bensound-betterdays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-betterdays.mp3"; sourceTree = "<group>"; };
+		76DAF27B1F360C2A00F9D3D6 /* bensound-anewbeginning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-anewbeginning.mp3"; sourceTree = "<group>"; };
+		76DAF27C1F360C2A00F9D3D6 /* bensound-memories.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-memories.mp3"; sourceTree = "<group>"; };
+		76DAF27D1F360C2A00F9D3D6 /* bensound-jazzyfrenchy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-jazzyfrenchy.mp3"; sourceTree = "<group>"; };
+		76DAF27E1F360C2A00F9D3D6 /* bensound-happyrock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-happyrock.mp3"; sourceTree = "<group>"; };
 		76DAF2871F360CC900F9D3D6 /* SoundStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundStore.swift; sourceTree = "<group>"; };
 		76E488001F0C339D008A58EF /* Rejuve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rejuve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E488031F0C339D008A58EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = justncode;
 				TargetAttributes = {
 					76E487FF1F0C339D008A58EF = {
@@ -261,9 +261,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rejuve/Pods-Rejuve-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CircularSlider/CircularSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircularSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -276,13 +279,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rejuve-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E06968731928445D56ECE25D /* [CP] Copy Pods Resources */ = {
@@ -351,6 +357,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -406,6 +414,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;

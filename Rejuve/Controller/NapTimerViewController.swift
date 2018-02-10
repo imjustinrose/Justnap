@@ -30,6 +30,8 @@ class NapTimerViewController: UIViewController {
         timerLabel.text = "\(time.minutes):00"
         time.minutes -=  1
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countdown), userInfo: nil, repeats: true)
+        
+        setupProximitySensor()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -37,6 +39,10 @@ class NapTimerViewController: UIViewController {
         
         timer.invalidate()
         soundStore.stop()
+    }
+    
+    func setupProximitySensor() {
+        UIDevice.current.isProximityMonitoringEnabled = true
     }
     
     @objc func countdown() {
