@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -212,22 +211,27 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDo-Z9-CZP">
-                                <rect key="frame" x="49.5" y="269" width="277.5" height="129"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="108"/>
+                                <rect key="frame" x="24" y="290.5" width="327" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="72"/>
                                 <color key="textColor" red="0.0043336493125848852" green="0.18813354306142807" blue="0.35756635928401059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="108"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.1529411765" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="cQl-Yn-ghc" secondAttribute="bottom" id="B4Q-up-7Uv"/>
                             <constraint firstItem="sDo-Z9-CZP" firstAttribute="centerX" secondItem="FeA-Bq-Y3A" secondAttribute="centerX" id="D3a-cb-Utf"/>
+                            <constraint firstItem="sDo-Z9-CZP" firstAttribute="leading" secondItem="FeA-Bq-Y3A" secondAttribute="leadingMargin" constant="8" id="EFJ-Uz-cOR"/>
                             <constraint firstAttribute="trailing" secondItem="cQl-Yn-ghc" secondAttribute="trailing" id="Mp0-1j-Dbx"/>
                             <constraint firstItem="sDo-Z9-CZP" firstAttribute="centerY" secondItem="FeA-Bq-Y3A" secondAttribute="centerY" id="NvO-Vl-WHa"/>
                             <constraint firstItem="cQl-Yn-ghc" firstAttribute="top" secondItem="FeA-Bq-Y3A" secondAttribute="top" id="bPN-a9-BR5"/>
                             <constraint firstItem="aHG-6A-laG" firstAttribute="top" secondItem="9KG-oR-aNK" secondAttribute="bottom" constant="75" id="efY-XC-p5a"/>
                             <constraint firstItem="9KG-oR-aNK" firstAttribute="centerX" secondItem="FeA-Bq-Y3A" secondAttribute="centerX" id="fCK-5X-2N0"/>
                             <constraint firstItem="cQl-Yn-ghc" firstAttribute="leading" secondItem="FeA-Bq-Y3A" secondAttribute="leading" id="ppk-C4-cPr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sDo-Z9-CZP" secondAttribute="trailing" constant="8" id="sJV-GV-0sL"/>
                         </constraints>
                     </view>
                     <connections>
