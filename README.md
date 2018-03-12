@@ -1,5 +1,5 @@
 <h1 align="center">
-  Rejuve
+  <a href="https://itunes.apple.com/us/app/justnap/id1356941066">Justnap</a>
   <br>
 </h1>
 
